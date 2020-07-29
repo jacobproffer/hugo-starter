@@ -1,0 +1,94 @@
+:root {
+  --container: 1420px;
+  --container-gutter: calc((100vw - var(--container)) / 2);
+  --white: #fff;
+  --black: #020408;
+
+  @include screen-below($desktop) {
+    --container: 1200px;
+  }
+
+  @include screen-below($desktopSm) {
+    --container: 1100px;
+  }
+
+  @include screen-below($laptopSm) {
+    --container: 970px;
+  }
+
+  @include screen-below($tablet) {
+    --container: 840px;
+  }
+
+  @include screen-below($portrait) {
+    --container: 700px;
+  }
+
+  @include screen-below($mobile) {
+    --container: 480px;
+  }
+
+  @include screen-below($mobile-sm) {
+    --container: 440px;
+  }
+
+  @include screen-below($mobile-x-sm) {
+    --container: 340px;
+  }
+
+  @include screen-below(375px) {
+    --container: 300px;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+* {
+  &:focus {
+    outline: 1px dotted var(--salmon);
+  }
+}
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  color: var(--body);
+  background-color: var(--white);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+button {
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  appearance: none;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+  text-align: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  transition: color 300ms ease-in-out;
+}
+
+svg,
+img {
+  max-width: 100%;
+}

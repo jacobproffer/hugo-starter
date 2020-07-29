@@ -1,0 +1,5 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+theme = "starter"
+title = "Hugo Starter"
+subtitle = "Basic Hugo Template"

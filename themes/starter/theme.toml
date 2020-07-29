@@ -1,0 +1,8 @@
+name = "Starter"
+description = "Basic Hugo template."
+tags = ["starter", "template"]
+min_version = "0.70"
+
+[author]
+  name = "Jacob Proffer"
+  homepage = "https://proffer.dev/"
